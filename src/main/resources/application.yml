@@ -1,0 +1,17 @@
+spring:
+ application:
+  name: Propmt intraction with Mysql
+  
+ datasource:
+  url: jdbc:mysql://localhost:3306/PromptMysql?createDatabaseIfNotExist=true
+  username: root
+  password: Shubham@3
+  
+ jpa:
+  hibernate: 
+   ddl-auto: update
+  show-sql: true
+
+
+gemenia-api:
+ key: Your API key
