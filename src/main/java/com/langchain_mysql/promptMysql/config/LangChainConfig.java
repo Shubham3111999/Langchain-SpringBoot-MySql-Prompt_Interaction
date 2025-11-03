@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import com.langchain_mysql.promptMysql.assistant.Assistant;
 import com.langchain_mysql.promptMysql.tools.StockTool;
 
+import dev.langchain4j.memory.chat.MessageWindowChatMemory;
 import dev.langchain4j.model.chat.ChatModel;
 import dev.langchain4j.model.googleai.GoogleAiGeminiChatModel;
 import dev.langchain4j.service.AiServices;
@@ -31,6 +32,7 @@ public class LangChainConfig {
 		return AiServices.builder(Assistant.class)
 				.chatModel(model)
 				.tools(tools)
+				.chatMemoryProvider( memoryId -> MessageWindowChatMemory.withMaxMessages(10))
 				.build();
 	}
 	

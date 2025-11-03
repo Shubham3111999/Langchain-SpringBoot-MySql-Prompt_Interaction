@@ -14,4 +14,8 @@ spring:
 
 
 gemenia-api:
- key: Your API key
+ key: AIzaSyDGcBqnor8a61jOOzDllCHfIQ0uUlsR5a4
+ 
+ 
+frontend:
+ origin: http://localhost:5173

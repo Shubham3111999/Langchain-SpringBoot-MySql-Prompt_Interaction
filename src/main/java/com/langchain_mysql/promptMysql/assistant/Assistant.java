@@ -1,6 +1,8 @@
 package com.langchain_mysql.promptMysql.assistant;
 
+import dev.langchain4j.service.MemoryId;
 import dev.langchain4j.service.SystemMessage;
+import dev.langchain4j.service.UserMessage;
 
 public interface Assistant {
 	@SystemMessage("""
@@ -10,6 +12,6 @@ public interface Assistant {
 	        When the user asks for data, generate the most appropriate SQL SELECT query and execute it.
 	        Respond with clear explanations based on query results.
 				""")
-	String chat(String string);      //Langchain will complete for us
+	String chat(@MemoryId String email , @UserMessage String userQuestion);      //Langchain will complete for us
 	
 }
