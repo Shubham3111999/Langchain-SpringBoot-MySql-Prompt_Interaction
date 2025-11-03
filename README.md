@@ -53,7 +53,7 @@ Unlike traditional tool-based assistants, this implementation dynamically fetche
 
 ## Setup
 
-1. Clone the repository: git clone https://github.com/your-username/dynamic-sql-assistant.git
+1. Clone the repository:(https://github.com/Shubham3111999/Langchain-SpringBoot-MySql-Prompt_Interaction.git)
 2. Change the application.yml file as per your configuration
 3. I have used Gemini in this project. Change the Model if you want (.pom as well as LangChainConfig.java file need to be changed)
 4. Add some products to the "products" table created
